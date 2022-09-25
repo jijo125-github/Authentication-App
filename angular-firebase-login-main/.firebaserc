@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-firebase-login-b521e": {
+      "hosting": {
+        "angular-firebase-login": [
+          "angular-firebase-login-b521e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-firebase-login-b521e"
+  }
+}
