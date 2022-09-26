@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "auth-ui-system": {
+      "hosting": {
+        "auth-ui": [
+          "auth-ui-system"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "auth-ui-system"
+  }
+}

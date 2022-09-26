@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card border-0 shadow">
+                <div class="card-body">x
+                 <div>
+                     <input type="file" class="text-nowrap text-truncate file" (change)="selectProfile($event)">
+                     <button type="button" class="btn btn-outline-warning" [disabled] = "!selectP" (click)="uploadP()">Upload</button>
+                 </div>
+     
+                 <div class="progress mt-2">
+                     <div class="progress-bar progress-bar-info"
+                         role="progressbar" attr.aria-valuenow="{{per}}"
+                         aria-valuemin="0" aria-valuemax="100" [ngStyle]="{ width: per + '%' }">
+                         {{per}}%
+                     </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

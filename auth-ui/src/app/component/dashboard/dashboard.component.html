@@ -1,0 +1,54 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <h5 class="text-danger">User Profile</h5>
+            <div class="card p-3 shadow">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">DOB</th>
+                            <th scope="col">Mobile</th>
+                            <th scope="col">Action</th>
+                            <th scope="col">Edit/Add</th>
+                            <th scope="col">Upload</th>
+                            <th scope="col">Show</th>
+                            <th scope="col">Option</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let user of usersList">
+                            <td>{{user.fname}}</td>
+                            <td>{{user.lname}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.dob}}</td>
+                            <td>{{user.mob}}</td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="deleteUser(user)">Delete</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="editUser()">Edit/Add</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="uProfile()">Upload Profile</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="userP()">Profile</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="signout()">Sign Out</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+</div>
+

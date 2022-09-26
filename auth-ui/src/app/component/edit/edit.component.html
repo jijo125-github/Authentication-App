@@ -1,0 +1,33 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-4 mt-5">
+            <div class="card border-0 shadow p-3">
+                <div class="form-floating mb-3 tetx-center">
+                    <h5 class="text-center text-warning">User</h5>
+                </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="firstName" name="firstname" [(ngModel)]="fname">
+                        <label for="firstname">First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="lname">
+                        <label for="lastName">Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="dob" name="dob" [(ngModel)]="dob">
+                        <label for="dob">Date Of Birth</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="mobile" name="mobile" [(ngModel)]="mob">
+                        <label for="mobile">Mobile No.</label>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" (click)="addUser()">Add User</button>
+            </div>
+        </div>
+    </div>
+</div>    

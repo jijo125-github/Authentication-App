@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <div class="mb-3 mt-3">
+                <h4 class="text-primary">PROFILE</h4>
+            </div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">File name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let file of listOfFiles">
+                    <th>{{file.name}}</th>
+                    <td>
+                        <a href="{{file.url}}" class="btn btn-outline-info" type="button" download>Download</a>
+                        <a class="btn btn-outline-danger ms-2" type="button" (click)="deleteP(file)">Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+
+    </div>
+</div>
